@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Tree Generator Pro Viewer</title>
+    <link rel="stylesheet" href="viewer.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="toolbar">
+        <div class="brand">
+          <strong>HTML Tree Generator Pro</strong>
+          <span id="capture-state"><span class="loading-dot" aria-hidden="true"></span>Loading</span>
+        </div>
+        <div class="toolbar-actions" role="toolbar" aria-label="Tree actions">
+          <div class="search-box" role="search">
+            <input id="search-input" type="search" autocomplete="off" spellcheck="false" aria-label="Search DOM tree" placeholder="Search">
+            <button id="search-previous" type="button" aria-label="Previous search match">Prev</button>
+            <button id="search-next" type="button" aria-label="Next search match">Next</button>
+            <span id="search-counter" aria-live="polite">0/0</span>
+          </div>
+          <button id="jump-root" type="button">Root</button>
+          <button id="jump-selected" type="button">Selected</button>
+          <button id="expand-parents" type="button">Expand Parents</button>
+          <button id="expand-all" type="button">Expand All</button>
+          <button id="collapse-all" type="button">Collapse All</button>
+          <details class="filter-menu">
+            <summary>Filters <span id="filter-status">None</span></summary>
+            <div class="filter-options" role="group" aria-label="Tree filters">
+              <label><input id="filter-scripts" type="checkbox"> Scripts</label>
+              <label><input id="filter-styles" type="checkbox"> Styles</label>
+              <label><input id="filter-svg" type="checkbox"> SVG</label>
+              <label><input id="filter-comments" type="checkbox"> Comments</label>
+              <label><input id="filter-empty-text" type="checkbox"> Empty text</label>
+              <label><input id="filter-hidden" type="checkbox"> Hidden</label>
+            </div>
+          </details>
+          <details class="export-menu">
+            <summary>Export</summary>
+            <div class="export-options" role="group" aria-label="Export options">
+              <label>
+                Scope
+                <select id="export-scope">
+                  <option value="entire">Entire tree</option>
+                  <option value="selected">Selected node</option>
+                </select>
+              </label>
+              <label>
+                Format
+                <select id="export-format">
+                  <option value="json">JSON</option>
+                  <option value="txt">TXT</option>
+                  <option value="html">HTML</option>
+                </select>
+              </label>
+              <div class="export-actions">
+                <button id="export-download" type="button">Download</button>
+                <button id="export-copy" type="button">Copy</button>
+              </div>
+            </div>
+          </details>
+        </div>
+      </header>
+
+      <div id="breadcrumb" class="breadcrumb" aria-label="Selected node path"></div>
+
+      <section class="workspace">
+        <section class="tree-pane" aria-label="DOM tree">
+          <div id="empty-state" class="empty-state">No visible nodes</div>
+          <div id="tree-viewport" class="tree-viewport" role="tree" tabindex="0">
+            <div id="tree-spacer" class="tree-spacer"></div>
+            <div id="tree-content" class="tree-content"></div>
+          </div>
+        </section>
+
+        <aside id="details-panel" class="details-panel" aria-label="Node details">
+          <header>
+            <h2>Details</h2>
+          </header>
+          <dl>
+            <div><dt>Tag</dt><dd data-field="tag">-</dd></div>
+            <div><dt>ID</dt><dd data-field="id">-</dd></div>
+            <div><dt>Classes</dt><dd data-field="classes">-</dd></div>
+            <div><dt>Attributes</dt><dd data-field="attrs">-</dd></div>
+            <div><dt>Text</dt><dd data-field="text">-</dd></div>
+            <div><dt>Children</dt><dd data-field="children">-</dd></div>
+            <div><dt>Depth</dt><dd data-field="depth">-</dd></div>
+          </dl>
+          <div class="copy-actions">
+            <button type="button" data-copy="selector">Copy Selector</button>
+            <button type="button" data-copy="xpath">Copy XPath</button>
+            <button type="button" data-copy="html">Copy HTML</button>
+          </div>
+        </aside>
+      </section>
+
+      <footer class="footer">
+        <span>Nodes: <strong id="node-count">0</strong></span>
+        <span>Selected: <strong id="selected-node">-</strong></span>
+        <span id="page-title">-</span>
+        <span id="ready-status">Ready</span>
+      </footer>
+      <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+    </main>
+
+    <script type="module" src="viewer.js"></script>
+  </body>
+</html>
