@@ -116,5 +116,32 @@ If you find this project useful, please consider **starring the repository** and
 
 **HTML Tree Generator Pro** — *Visualize, explore, search, and export the HTML structure of any webpage with ease.*
 
-<img width="1920" height="1050" alt="image" src="https://github.com/user-attachments/assets/cfe09b68-e0f7-4bee-bab1-7795e6514f68" />
+# 📸 Screenshots
+
+## Main Tree Viewer
+
+Visualize the complete HTML DOM of any webpage using an interactive hierarchical tree.
+
+<img width="1920" height="1050" alt="image" src="https://github.com/user-attachments/assets/58bc70b7-24fb-4d01-ae70-f5cf8391b922" />
+
+---
+
+## Powerful Search
+
+Quickly locate elements by tag, ID, class, or other attributes. Matching nodes are highlighted and automatically selected.
+
+<img width="1920" height="1050" alt="image" src="https://github.com/user-attachments/assets/b22613e8-be9c-4789-8f7b-ba1a318db2e2" />
+
+---
+
+## Export HTML Structure
+
+Export the complete DOM or the selected node as HTML, JSON, or TXT with a single click.
+
+<img width="1920" height="1050" alt="image" src="https://github.com/user-attachments/assets/1d1b6185-4ad9-41e1-96d3-1363362b47cc" />
+
+
+
+
+
 
