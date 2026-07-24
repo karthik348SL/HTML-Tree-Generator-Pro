@@ -1,6 +1,3 @@
-Here's a professional **GitHub repository description** that you can paste directly into your `README.md`.
-
----
 
 # HTML Tree Generator Pro 🌳
 
