@@ -122,7 +122,7 @@ If you find this project useful, please consider **starring the repository** and
 
 Visualize the complete HTML DOM of any webpage using an interactive hierarchical tree.
 
-<img width="1920" height="1050" alt="image" src="https://github.com/user-attachments/assets/58bc70b7-24fb-4d01-ae70-f5cf8391b922" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/247c1d3c-2145-4d96-bbcf-52b2cde51cef" />
 
 ---
 
@@ -130,7 +130,8 @@ Visualize the complete HTML DOM of any webpage using an interactive hierarchical
 
 Quickly locate elements by tag, ID, class, or other attributes. Matching nodes are highlighted and automatically selected.
 
-<img width="1920" height="1050" alt="image" src="https://github.com/user-attachments/assets/b22613e8-be9c-4789-8f7b-ba1a318db2e2" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/02634f59-9225-4d69-b1dd-46aea94cb73c" />
+
 
 ---
 
@@ -138,7 +139,8 @@ Quickly locate elements by tag, ID, class, or other attributes. Matching nodes a
 
 Export the complete DOM or the selected node as HTML, JSON, or TXT with a single click.
 
-<img width="1920" height="1050" alt="image" src="https://github.com/user-attachments/assets/1d1b6185-4ad9-41e1-96d3-1363362b47cc" />
+<img width="1920" height="1050" alt="image" src="https://github.com/user-attachments/assets/f6032ba8-8b69-4f77-bd9c-4b1e677c06c8" />
+
 
 
 
